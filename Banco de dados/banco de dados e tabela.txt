@@ -1,0 +1,30 @@
+sistema_hotel
+
+tabelas-
+
+usuarios:
+id (chave) int(11) NOT NULL AUTO_INCREMENT
+nome varchar(100) NOT NULL
+email varchar(100) NOT NULL
+senha varchar(255) NOT NULL
+tipo enum('funcionario', 'gerente') NOT NULL
+
+empresas:
+
+id (chave) int(11) NOT NULL AUTO_INCREMENT
+nome_empresa varchar(255) NOT NULL
+email varchar(255) NOT NULL
+senha varchar(255) NOT NULL
+quantidade_quartos int(11) NOT NULL
+
+hospedes:
+
+id (chave) int(11) NOT NULL AUTO_INCREMENT
+nome varchar(100) NOT NULL
+telefone varchar(15) NOT NULL
+quarto int(11) NOT NULL
+
+comentarios
+id (chave) int(11) NOT NULL AUTO_INCREMENT
+comentario text NOT NULL
+data_criacao timestamp NOT NULL

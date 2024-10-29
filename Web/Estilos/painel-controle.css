@@ -1,0 +1,99 @@
+/* Estilo do Painel de Controle */
+.painel-controle {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.boas-vindas h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.info-empresa, .secoes-aba {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+/* Abas */
+.secoes-aba .aba {
+    background-color: #cccccc;
+    border: 1px solid #b5b5b5;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo.ativa {
+    display: block;
+}
+
+/* Estilo dos blocos de quarto */
+.quarto {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #d9d9d9;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.quarto.ocupado {
+    background-color: #ffcccc;
+}
+.secoes-aba.adicionais {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+/* Estilo das abas adicionais */
+.secoes-aba.adicionais .aba {
+    background-color: #cccccc;
+    border: 1px solid #b5b5b5;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#conteudo-aba-adicional .aba-conteudo {
+    display: none;
+}
+
+#conteudo-aba-adicional .aba-conteudo.ativa {
+    display: block;
+}
+
+#comentarios-lista p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo padrão do botão "Sair" */
+#header-navegacao-empresa-entrar-botao a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4d4d; /* Cor vermelha para o botão */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+/* Efeito ao passar o mouse */
+#header-navegacao-empresa-entrar-botao a:hover {
+    background-color: #e60000; /* Tom de vermelho mais escuro ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+}
+.oculto {
+    display: none;
+}

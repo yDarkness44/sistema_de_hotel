@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Sistema de Hotel</title>
+    <link rel="stylesheet" href="../Estilos/estilo1.css">
+    <link rel="stylesheet" href="../Estilos/estilo-cadastro.css">
+    <link rel="stylesheet" href="../Estilos/estilo-login.css">
+    <link rel="stylesheet" href="../Estilos/painel-controle.css">
+</head>
+<body class="corpo-da-pagina">
+
+    <!-- Barra de navegação -->
+    <section class="barra-de-navegacao">
+        <header class="header-navegacao">
+            <div id="header-navegacao-imagem">
+                <a href="../Paginas Web/pagina-home.html"><img src="../Imagens/Icons/bedside-table.png" alt="Ícone logo" id="div-imagem-logo"></a>
+            </div>
+            <div id="header-navegacao-div-logo">
+                <h1><strong id="titulo-palavra-blue">Blue</strong><strong id="titulo-palavra-host">Host</strong> <strong id="titulo-palavra-solutions">Solutions</strong></h1>
+                <h2>A melhor ferramenta para controle de hóspedes!</h2>
+            </div>
+            <div class="header-navegacao-entrar-empresa">
+                <div id="header-navegacao-empresa-entrar-botao"><a href="../Paginas Web/pagina-home.html">Sair</a></div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Conteúdo do Painel de Controle -->
+    <main class="painel-controle">
+
+        <!-- Seção de Cadastro de Empresa -->
+        <section class="empresa-secao">
+            <h2>Cadastrar Empresa</h2>
+            <div id="form-cadastrar">
+                <form id="cadastro-empresa-form" method="POST" action="../../Backend/empresa-cadastro.php">
+                    <input type="hidden" name="acao" value="cadastrar_empresa"> <!-- Campo oculto -->
+                    
+                    <label for="cadastro-email-empresa">Email:</label>
+                    <input type="email" id="cadastro-email-empresa" name="email" required>
+            
+                    <label for="cadastro-senha-empresa">Senha:</label>
+                    <input type="password" id="cadastro-senha-empresa" name="senha" required>
+            
+                    <label for="cadastro-nome-empresa">Nome da Empresa:</label>
+                    <input type="text" id="cadastro-nome-empresa" name="nome_empresa" required>
+            
+                    <label for="cadastro-quartos-empresa">Quantidade de Quartos:</label>
+                    <input type="number" id="cadastro-quartos-empresa" min="1" name="quantidade_quartos" required>
+            
+                    <button type="submit">Cadastrar Empresa</button>
+                </form>
+                <p>Já tem uma empresa criada? <a href="painel-controle-login.html">fazer login</a>  </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p>Contato: <a href="mailto:seuemail@exemplo.com">joaojott44@gmail.com</a></p>
+            <p>Telefone: (88) 98855-0170</p>
+            <p>Desenvolvido em 2024</p>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

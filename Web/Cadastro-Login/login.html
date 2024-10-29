@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Formatações gerais no head-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para seu hotel</title>
+    <link rel="stylesheet" href="../Estilos/estilo1.css">
+    <link rel="stylesheet" href="../Estilos/estilo-cadastro.css">
+    <link rel="stylesheet" href="../Estilos/estilo-login.css">
+</head>
+<body class="corpo-da-pagina">
+    <!--Elementos do body-->
+    <section class="barra-de-navegacao">
+        <header class="header-navegacao">
+            <!--Elementos do header que está dentro da seção barra de navegação-->
+            <div id="header-navegacao-imagem">
+                <!--Logo visual/imagem do site-->
+                <a id="header-navegacao-imagem-botao-home" href="../Paginas Web/pagina-home.html">
+                    <img src="../Imagens/Icons/bedside-table.png" alt="Icone logo" id="div-imagem-logo">
+                </a>
+            </div>
+            <div id="header-navegacao-div-logo">
+                <!--Logo textual do site-->
+                <h1><strong id="titulo-palavra-blue">Blue</strong><strong id="titulo-palavra-host">Host</strong> <strong id="titulo-palavra-solutions">Solutions</strong></h1>
+                <h2>A melhor ferramenta para controle de hospedes!</h2>
+            </div>
+            <div class="header-navegacao-entrar-empresa">
+                <div id="header-navegacao-empresa-entrar-botao">
+                    <a id="header-navegacao-empresa-entrar-botao-a" href="../Cadastro-Login/login.html">Minha empresa</a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <main>
+        <div class="login-usuario">
+            <h2>Login</h2>
+            <!-- Formulário de login -->
+            <form action="../../Backend/login.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit" class="botao-entrar">Entrar</button>
+            </form>
+            <div class="login-link">
+                <p class="esqueceu-senha">Esqueceu sua senha? <a href="../Recuperar-Senha/recuperar-senha.html" style="color: red;">Clique aqui</a></p>
+                <p>Não tem uma conta? <a href="../Cadastro-Login/cadastro.html" style="color: rgb(20, 116, 52);">Cadastrar</a></p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p>Contato: <a href="mailto:seuemail@exemplo.com">joaojott44@gmail.com</a></p>
+            <p>Telefone: (88) 98855-0170</p>
+            <p>Desenvolvido em 2024</p>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- login.html -->
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Sistema de Hotel</title>
+    <link rel="stylesheet" href="../Estilos/estilo1.css">
+    <link rel="stylesheet" href="../Estilos/estilo-cadastro.css">
+    <link rel="stylesheet" href="../Estilos/estilo-login.css">
+    <link rel="stylesheet" href="../Estilos/painel-controle.css"> <!-- Nova folha de estilo para o painel -->
+</head>
+<body class="corpo-da-pagina">
+
+    <!-- Barra de navegação -->
+    <section class="barra-de-navegacao">
+        <header class="header-navegacao">
+            <div id="header-navegacao-imagem">
+                <a href="../Paginas Web/pagina-home.html"><img src="../Imagens/Icons/bedside-table.png" alt="Ícone logo" id="div-imagem-logo"></a>
+            </div>
+            <div id="header-navegacao-div-logo">
+                <h1><strong id="titulo-palavra-blue">Blue</strong><strong id="titulo-palavra-host">Host</strong> <strong id="titulo-palavra-solutions">Solutions</strong></h1>
+                <h2>A melhor ferramenta para controle de hóspedes!</h2>
+            </div>
+            <div class="header-navegacao-entrar-empresa">
+                <div id="header-navegacao-empresa-entrar-botao"><a href="../Paginas Web/pagina-home.html">Sair</a></div>
+            </div>
+        </header>
+    </section>
+
+    <!-- Conteúdo do Painel de Controle -->
+    <main class="painel-controle">
+
+        <!-- Seção de Login -->
+        <section class="empresa-secao">
+            <h2>Login na Empresa</h2>
+            <div id="form-entrar" class="form-empresa">
+                <form id="entrar-empresa-form" method="POST" action="../../Backend/empresa-login.php">
+                    <label for="entrar-email-empresa">Email:</label>
+                    <input type="email" id="entrar-email-empresa" name="email" required>
+
+                    <label for="entrar-senha-empresa">Senha:</label>
+                    <input type="password" id="entrar-senha-empresa" name="senha" required>
+
+                    <button type="submit">Logar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <p>Contato: <a href="mailto:seuemail@exemplo.com">joaojott44@gmail.com</a></p>
+            <p>Telefone: (88) 98855-0170</p>
+            <p>Desenvolvido em 2024</p>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

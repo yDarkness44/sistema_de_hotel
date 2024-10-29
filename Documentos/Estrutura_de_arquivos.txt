@@ -1,0 +1,42 @@
+Sistema_de_hotel {
+
+Backend {
+vazia }
+
+Banco de dados {
+vazia }
+
+Comentários {
+vazia }
+
+Estilos {
+Aqui estão todas minhas folhas de estilo }
+
+Imagens {
+Icons {
+meus icones}
+Backgrounds {
+meus backgrounds}
+}
+
+Informações {
+vazia }
+
+Recursos usados {
+vazia }
+
+Web { 
+Cadastro-Login {
+cadastro.html
+login.html
+}
+
+Paginas web {
+pagina-home.html}
+
+Recuperar senha {
+recuperar-senha.html }
+
+}
+
+}
